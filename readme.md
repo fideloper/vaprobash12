@@ -2,6 +2,8 @@
 
 **Va**&#x200B;grant **Pro**&#x200B;visioning **Bash** Scripts
 
+> **ATTENTION:  This repository is for Ubuntu 12.04. Please see [fideloper/Vaprobash](https://github.com/fideloper/vaprobash) for Ubuntu 14.04.**
+
 [View the site and extended docs.](http://fideloper.github.io/Vaprobash/index.html)
 
 [![Build Status](https://travis-ci.org/fideloper/Vaprobash.png?branch=master)](https://travis-ci.org/fideloper/Vaprobash)
@@ -31,10 +33,10 @@ Some further assumptions and self-imposed restrictions. If you find yourself nee
 
 ```bash
 # curl
-$ curl -L http://bit.ly/vaprobash > Vagrantfile
+$ curl -L http://bit.ly/vaprobash12 > Vagrantfile
 
 # wget
-$ wget -O Vagrantfile http://bit.ly/vaprobash
+$ wget -O Vagrantfile http://bit.ly/vaprobash12
 ```
 
 > The `bit.ly` link will always point to the master branch version of the Vagrantfile.
