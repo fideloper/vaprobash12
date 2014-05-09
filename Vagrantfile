@@ -3,7 +3,7 @@
 
 # Config Github Settings
 github_username = "fideloper"
-github_repo     = "Vaprobash"
+github_repo     = "vaprobash12"
 github_branch   = "master"
 
 # Server Configuration
