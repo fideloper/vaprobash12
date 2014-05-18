@@ -48,6 +48,7 @@ composer_packages     = [        # List any global Composer packages that you wa
 ]
 public_folder         = "/vagrant" # If installing Symfony or Laravel, leave this blank to default to the framework public directory
 laravel_root_folder   = "/vagrant/laravel" # Where to install Laravel. Will `composer install` if a composer.json file exists
+october_root_folder   = "/vagrant/october" # Where to isntall October. Will `composer install` if a composer.json file exists
 symfony_root_folder   = "/vagrant/symfony" # Where to install Symfony.
 nodejs_version        = "latest"   # By default "latest" will equal the latest stable version
 nodejs_packages       = [          # List any global NodeJS packages that you want to install
@@ -249,6 +250,9 @@ Vagrant.configure("2") do |config|
 
   # Provision Laravel
   # config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/laravel.sh", args: [server_ip, laravel_root_folder, public_folder]
+
+  # Provision October
+  # config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/october.sh", args: [server_ip, october_root_folder]
 
   # Provision Symfony
   # config.vm.provision "shell", path: "https://raw.github.com/#{github_username}/#{github_repo}/#{github_branch}/scripts/symfony.sh", args: [server_ip, symfony_root_folder, public_folder]
